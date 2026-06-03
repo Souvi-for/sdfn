@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(247, 229, 195);
+}
+
+.f {
+    color: rgb(7, 70, 22);
+    text-align: center;
+    font-family: 'Playfair Display', sans-serif;
+}
+.wrapper {
+    text-align: center;  
+}
+.pu {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 10px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.pu li {
+    display: block;
+    padding: 14px 20px;
+    border-radius: 10px;
+    background: #e8f0e8;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(7, 70, 22);
+}
+.da {
+    display: inline-block;
+    background: #ffffff;
+    border-radius: 10px;
+    margin: 15px 0;
+    padding: 14px 20px;
+    border-radius: 10px;
+    background: #e8f0e8;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(7, 70, 22);
+}
+a {
+    text-decoration: none;
+    color: rgb(7, 70, 22);
+}
+
+@media (min-width: 768px) {
+    .pu {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        padding: 12px 20px;
+    }
+    .pu li {
+        flex: 1;                   
+        display: flex;             
+        align-items: center;       
+        justify-content: center;  
+        text-align: center;
+        word-break: normal;     
+        padding: 10px 20px;
+    }
+    .pu li a, .pu li {
+        padding: 10px 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .pu {
+        gap: 25px;
+        padding: 15px 30px;
+    }
+    .pu li a:hover,
+    .pu li:hover {
+        transform: scale(1.05);
+        transition: all 0.3s;
+    }
+}
+
+.pu li a:active,
+.pu li:active {
+    transform: scale(0.98);
+    background-color: #c8e0c8;
+    transition: all 0.05s;
+}
+
+.general1 {
+    color: rgb(24, 90, 39);
+    text-align: center;
+    font-family: 'Unbounded', sans-serif;
+}
+
+.general {
+    font-family: 'Lato', sans-serif;
+    color: rgb(52, 112, 66);
+}
+
+.general2 {
+    text-align: center;
+}
+
+.center-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.gabage h3 {
+    text-align: center;
+}
+
+.kontakts {
+    font-family: 'Lato', sans-serif;
+    color: rgb(52, 112, 66);
+    font-size: 20px;
+    text-align: center;
+}
+
+.max-button {
+    display: inline-block;
+    color: white !important;
+    background: linear-gradient(135deg, #2e7d32, #1b5e20);
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 14px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin: 15px 0;
+    border: none;
+}
+
+.max-button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #1b5e20, #0a3d0f);
+    color: white;
+}
+
+.map-row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+}
+.map-item {
+    flex: 1;
+    min-width: 0;
+}
+.map-item > div {
+    position: relative;
+    height: 350px !important;
+    padding-bottom: 0 !important;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.map-item > div iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.map-item > iframe {
+    width: 100%;
+    height: 350px;
+    border-radius: 12px;
+}
+@media (min-width: 768px) {
+    .map-row {
+        flex-direction: row;
+    }
+    .map-item {
+        width: 50%;
+    }
+}
+.numbers {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+.rec {
+    font-family: 'Lato', sans-serif;
+    color: rgb(52, 112, 66);
+    font-size: 20px;
+    text-align: center;
+}
+.rec h4 {
+    font-family: "Poppins", serif;
+    font-size: 30px;
+}
+img {
+    border-radius: 14px;
+}
+.news {
+    font-family: 'Lato', sans-serif;
+    color: rgb(52, 112, 66);
+    font-size: 20px;
+    text-align: center;
+}
+.tarif {
+    border: 3px dotted rgb(59, 44, 17);
+    border-radius: 14px;
+    background-color: rgba(246, 225, 186, 0.877);
+    text-align: center;
+    padding: 10px;                    
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
+    display: inline-block;            
+    width: auto;                      
+    margin: auto;                
+}
+.other {
+    font-family: 'Lato', sans-serif;
+    color: rgb(52, 112, 66);
+    font-size: 20px;
+    text-align: center;
+}
+
+.gabage {
+    border: 5px dashed rgb(7, 70, 22);
+    border-radius: 14px;
+    width: auto;
+    padding: 10px 20px;
+    margin: 15px 5px;
+    background-color: rgba(246, 225, 186, 0.877);
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Lato', sans-serif;
+    color: rgb(52, 112, 66);
+    font-size: 20px;
+    text-align: center;
+}
+form {
+    text-align: center;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    max-width: 500px;
+}
+
+form input {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    padding: 12px 20px;
+    width: 260px;
+    border: 2px solid #c0d6b3;
+    border-radius: 60px;
+    background: white;
+    color: #1e3a1e;
+    transition: all 0.3s;
+}
+
+form button {
+    background-color: #2e7d32; 
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 12px 28px;
+    border-radius: 60px;
+    color: white;
+    transition: all 0.3s;
+}
+form button:hover {
+    transform: scale(1.03);
+    background-color: #1b5e20;
+}
+form button:active {
+    transform: scale(0.97);
+    background-color: #0a3d0f;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+}
+@media (max-width: 550px) {
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+    form input[type="email"] {
+        width: 80%;
+    }
+}
+.to {
+    font-weight: bold;
+}
